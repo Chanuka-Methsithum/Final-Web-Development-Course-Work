@@ -1,0 +1,219 @@
+@font-face {
+    font-family: Omnes-Semibold;
+    src: url(Resorces/fonts/OMNES\ SEMIBOLD.TTF);
+}
+@font-face {
+    font-family: Omnes-Bold;
+    src: url(Resorces/fonts/OMNES\ BOLD.TTF);
+}
+@font-face {
+    font-family: Omnes;
+    src: url(Resorces/fonts/OMNES\ REGULAR.TTF);
+}
+@font-face {
+    font-family: Omnes-light;
+    src: url(Resorces/fonts/OMNES\ THIN.TTF);
+}
+
+
+.body {
+    background-color: black
+}
+
+.nav-bar-bg {
+    position: fixed;
+    display: flex;
+    top: 5%;
+    left: 0%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-bar {
+    width: 35%;
+    height: 60px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.nav-bar-name {
+    color: white;
+    font-family: Omnes-Semibold;
+    font-size: large;
+}
+
+.nav-bar-icon {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    gap: 5px;
+}
+
+.nav-bar-buttons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-bar-btn-search {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.1s cubic-bezier(0.36, 0.04, 0, 1);
+}
+
+#search-input {
+    background-color: rgb(24, 24, 24);
+    border: 0px;
+    border-radius: 6px;
+    height: 35%;
+    width: 40%;
+    color: whitesmoke;
+    padding-left: 1%;
+}
+#nav-bar-btn-search:hover {
+    transition: 0.1s cubic-bezier(0.36, 0.04, 0, 1);
+    transform: scale(1.2);
+}
+
+.nav-bar-btn-about {
+    background-color: rgb(38, 255, 34);
+    height: 75%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 6px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Omnes-Semibold;
+}
+
+.weather-info {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#location-by-text {
+    color: white;
+}
+
+.forecast-for-that-day {
+    width: 100%;
+}
+
+@keyframes slide {
+    to {
+        left: 200px;
+    }
+}
+
+.slide{
+    animation-duration: 5s;
+    animation-name: slide;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.search-window-background{
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(58, 58, 58, 0.2);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    z-index: 999;
+}
+
+.search-window {
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(30, 30, 30);
+}
+
+.serach-window-properties-1 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-result-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.table-dark-extended th, 
+.table-dark-extended td {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.table-dark-extended th {
+    font-family: Omnes;
+    letter-spacing: 1.5px;
+    font-size: large;
+}
+
+.table-dark-extended td {
+    font-family: Omnes-light; 
+    letter-spacing: 0.5px;
+}
+
+.table-dark-extended tr:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.table-dark-extended-forecast td {
+    color: white;
+    font-family: Omnes;
+    letter-spacing: 1px;
+    font-size: large;
+}
