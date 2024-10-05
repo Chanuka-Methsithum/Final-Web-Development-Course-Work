@@ -28,7 +28,7 @@
                             <th scope="col">Name</th>
                             <th scope="col">Country</th>
                             <th scope="col">Region</th>
-                            <th scope="col">Latitude & Longitude</th>
+                            <th scope="col" class="d-none d-lg-block">Latitude & Longitude</th>
                         </tr>
                     </thead>
                     <tbody class="" id="tbl-body"></tbody>
@@ -38,13 +38,8 @@
     </div>
     <div class="nav-bar-bg">
         <div class="nav-bar">
-            <div class="nav-bar-icon">
-                <div class="nav-bar-name">Weatherly</div>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path
-                        d="M21 11h-3.17l2.54-2.54c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0L15 11h-2V9l3.95-3.95c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0L13 6.17V3c0-.55-.45-1-1-1s-1 .45-1 1v3.17L8.46 3.63c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.03 0 1.42L11 9v2H9L5.05 7.05c-.39-.39-1.03-.39-1.42 0-.39.39-.39 1.02 0 1.41L6.17 11H3c-.55 0-1 .45-1 1s.45 1 1 1h3.17l-2.54 2.54c-.39.39-.39 1.02 0 1.41.39.39 1.03.39 1.42 0L9 13h2v2l-3.95 3.95c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0L11 17.83V21c0 .55.45 1 1 1s1-.45 1-1v-3.17l2.54 2.54c.39.39 1.02.39 1.41 0 .39-.39.39-1.03 0-1.42L13 15v-2h2l3.95 3.95c.39.39 1.03.39 1.42 0 .39-.39.39-1.02 0-1.41L17.83 13H21c.55 0 1-.45 1-1s-.45-1-1-1z" />
-                </svg>
+            <div class="d-none flex-row d-lg-flex gap-1">
+                <p class="nav-bar-name text-center">Weatherly</p>
             </div>
             <div class="nav-bar-buttons">
                 <div class="nav-bar-btn-search">
@@ -56,12 +51,12 @@
                             d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                     </svg>
                 </div>
-                <div class="nav-bar-btn-about">About</div>
+                <div class="nav-bar-btn-about d-none d-lg-flex">About</div>
             </div>
         </div>
     </div>
 
-    <div class="weather-info">
+    <div class="weather-info gap-3">
         <div class="location">
             <svg class="" id="location-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
                 width="24px" fill="#FFFFFF">
@@ -76,17 +71,13 @@
             <label for="" id="location-by-text"></label>
         </div>
 
-        <div class="container d-flex flex-row h-100" style="gap: 10rem;">
+        <div class="container d-flex flex-column flex-lg-row gap-3 gap-lg-5">
 
-            <div class="live-temp d-flex flex-column justify-content-center w-25">
-                <center>
-                    <h1>
-                        <p id="live-temp" class="text-white"></p>
-                    </h1>
-                </center>
+            <div class="d-flex flex-column w-100 justify-content-center w-25">
+                <p id="live-temp" class="text-white text-center fs-1 fw-bold"></p>
             </div>
 
-            <div class="container w-100 d-flex flex-column" style="">
+            <div class="container w-100 d-flex flex-column justify-content-center" style="">
                 <div class="container">
                     <table class="table table-dark-extended-forecast table-borderless">
                         <tbody id="forecast-tbl">
@@ -98,7 +89,7 @@
 
                 <div class="container d-flex flex-row flex-grow-1 justify-content-center">
                     <div class="container justify-content-center">
-                        <img src="Resorces\img\wind-turbine.png" class="w-50" id="turbine-img" alt="">
+                        <img src="Resorces\img\wind-turbine.png" class="w-75" id="turbine-img" alt="">
                     </div>
 
                     <div class="container">
@@ -109,9 +100,9 @@
 
         </div>
 
-        <div class="container" style="overflow: hidden;">
+        <div class="container " style="overflow: hidden;">
             <div class="" style="position: relative; bottom: 5px;">
-                <div id="carousel-id" class="slide">
+                <div id="carousel-id" class="slide overflow-auto mt-5 mt-lg-4" style="scrollbar-color: #888 #333;">
 
                 </div>
             </div>

@@ -45,7 +45,7 @@ search_text_field.addEventListener('keyup', (event) => {
                             <td>${element.name}</td>
                             <td>${element.country}</td>
                             <td>${element.region}</td>
-                            <td>${element.lat} / ${element.lon}</td>
+                            <td class="d-none d-lg-block">${element.lat} / ${element.lon}</td>
                         </tr>`
             });
             document.getElementById('tbl-body').innerHTML = tblBody

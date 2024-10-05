@@ -51,16 +51,12 @@
 }
 
 .nav-bar-name {
-    color: white;
+    color: #ffffff;
     font-family: Omnes-Semibold;
     font-size: large;
 }
 
 .nav-bar-icon {
-    display: flex;
-    flex-direction: row;
-    padding-left: 15px;
-    gap: 5px;
 }
 
 .nav-bar-buttons {
